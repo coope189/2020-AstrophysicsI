@@ -1,0 +1,114 @@
+import numpy as np
+
+sigmacont=5.67051e-5
+acont=7.5657e-15
+ev=1.602e-12
+hcont=6.625e-27
+ccont=3.e10
+kcont=1.381e-16
+rcont=8.314472e7
+me=9.109e-28
+Gcont=6.67e-8
+Msun=1.989e33
+Mearth=5.972e27
+Mjupiter=1.898e30
+Lsun=3.827e33
+rsun=6.96e10
+rjupiter=7.149e9
+rearth=6.371e8
+au=1.49598e13
+pc=3.085678e18
+mh=1.67352e-24
+yr=365.*24.*3600
+pi=3.1415926
+
+Chapter 1 Problem 2:
+
+a)
+
+$$ \frac{S}{N} = \frac{N_{star}}{\sqrt{N_{star} + n_{sky}\pi R^{2}}} $$
+
+b)
+
+$$ \frac{S}{N} = \frac{N_{star}}{\sqrt{N_{star} + n_{sky}\pi (R/3)^{2}}} $$
+$$ \frac{S}{N} = \frac{N_{star}}{\sqrt{N_{star} + n_{sky}\pi R^{2}/9}} $$
+
+c)
+
+source-limited case
+
+$ R_{star} $ : total photon count rate for star
+
+$ R_{sky} $ : total photon count rate for star
+
+$$\frac{S}{N} = \frac{R_{star}t}{\sqrt{R_{star}t + R_{sky}t}}$$
+
+$$= \frac{t}{\sqrt{\frac{t}{R_{star}} + \frac{R_{sky}t}{R_{star}^{2}}}}$$
+
+if $R_{star}>>R_{sky}$ then
+
+$$\frac{S}{N} \sim \frac{t}{\sqrt{\frac{t}{R_{star}}}}$$
+
+$$ \sim R_{star}^{1/2}t^{1/2}$$
+
+$$\frac{S}{N} \propto t^{1/2}$$
+
+background-limited case
+
+$$\frac{S}{N} = \frac{R_{star}t}{\sqrt{R_{star}t + R_{sky}t}}$$
+
+$$= \frac{(R_{star}/R_{sky})t}{\sqrt{(R_{star}/R_{sky})t+(1/R_{sky}^{2})t}}$$
+
+if $R_{sky}>>R_{star}$ then
+
+$$\frac{S}{N} \sim \frac{(R_{star}/R_{sky})t}{\sqrt{(R_{star}/R_{sky})t}} $$
+
+$$ \sim (R_{star}/R_{sky})^{1/2}t^{1/2}$$
+
+$$\frac{S}{N} \propto t^{1/2}$$
+
+d)
+
+To reach the S/N obtained with a 10-m telescope the exposure time needs to be increased by a factor of 100 when the counts from the star are much greater than the counts from the sky in the seeing disk. To reach the S/N obtained with a 10-m telescope the exposure time needs to be increased by a factor of 1000 when the counts from the star are much greater less the counts from the sky in the seeing disk. 
+
+Chaper 2 problem 1
+
+a)
+
+$$f_{\nu}(d) = f_{\nu}(r_{*})\frac{r*^{2}}{d^{2}}$$
+$$f(d_{\odot}) = f(R_{\odot})\frac{R_{\odot}^{2}}{d_{\odot}^{2}} $$
+$$\Omega =\frac{A}{r^{2}} $$
+$$\Omega =  \frac{\pi R_{\odot}^{2}}{d_{\odot^{2}}}$$
+$$\frac{R_{\odot}^{2}}{d_{\odot}^{2}}=\frac{\Omega}{\pi}$$
+$$f(d_\odot)=f(R_\odot)\frac{\Omega}{\pi}$$
+$$f(R_\odot)=\pi f(d_\odot)/\Omega$$
+
+b)
+
+$$\delta\sim\frac{d}{D}$$
+$$\delta = \frac{2R_\odot}{d_\odot}$$
+$$\frac{R_\odot}{d_\odot}=\frac{\delta}{2}$$
+$$\Omega=\frac{A}{r^{2}}$$
+$$\Omega=\frac{\pi R_{\odot}^{2}}{d_{\odot}^{2}}$$
+$$\Omega=\pi (\frac{ R_{\odot}}{d_{\odot}})^{2}$$
+$$\Omega=\pi (\frac{\delta}{2})^{2}$$
+$$\Omega=\frac{\pi}{4} \delta^{2}$$
+$$\Omega=\frac{\pi}{4} (0.57^{\circ} \frac{\pi}{180^{\circ}})^{2}$$
+$$\Omega=7.8x10^{-5}$$
+
+c)
+
+$$f(R_{\odot})=\frac{c}{4}aT\odot^{4}$$
+$$f{R_{\odot}}=\pi f(d_{\odot)}/\Omega$$
+$$\frac{\pi f(d_{\odot})}{\Omega}=\frac{c}{4}aT\odot^{4}$$
+$$\frac{4pi f(d_{\odot})}{ca\Omega}=T\odot^{4}$$
+$$T_{\odot}=[\frac{4\pi f(d_{\odot})}{ca\Omega}]^{1/4}$$
+$$T_{\odot}=[\frac{4\pi (1.4x10^{6})erg*s^{-1} cm^{-2}}{(3x10^{8}m*s^{-1})(7.6x10^{-15}erg*cm^{-3}K^{-4})(7.8x10^{-5})}]^{1/4}$$
+$$T^{\odot}=5608K$$
+
+d)
+
+$$T_{\odot}=[\frac{4\pi f(d_{\odot})}{ca\Omega}]^{1/4}$$
+$$T_{\odot}=[\frac{4\pi f_{\lambda}(\lambda_{1})}{ca\Omega}]^{1/4}$$
+$$T_{\odot}=[\frac{15f_{\lambda}(\lambda_{1})c^{2}h^{3}}{2\pi^{4}k^{4}\Omega}]^{1/4}$$
+$$T_{\odot}=[\frac{15c^{2}h^{3}f_{\lambda}(\lambda_{1})}{2\pi^{4}k^{4}\Omega}]^{1/4}$$
